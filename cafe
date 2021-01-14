@@ -54,7 +54,7 @@ total_order.pack()
 tk.Button(order_frame, text='결제', command=lambda: switch_frame(total_frame, order_frame)).pack()
 
 tk.Label(total_frame, text=("총 %d원" %total['price']), font=('Helvetica', 18, 'bold')).pack()
-tk.Button(total_frame, text=('주문해주셔서 감사합니다.'), font=('Helvetica', 18, 'bold'))
+tk.Button(total_frame, text=('주문해주셔서 감사합니다.'), font=('Helvetica', 18, 'bold')).pack()
 
 
 
