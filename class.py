@@ -1,20 +1,33 @@
-#생성자를 알아봅시다
+#인스턴스의 나이를 올려봅시다.
 class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    name = ""
+    age = 0
 
     def said(self, sentence):
-        print(self.name, self.age, sentence)
-
+        print(self.name, sentence)
+        print(sentence, self.name)
 
     def getting_older(self):
         self.age += 1
         print("%s는 올해 %d 살이 되었다."%(self.name, self.age))
         return self.age #return 결과값
 
-zuckerberg = Person("마크 저커버그", 37)
-zuckerberg.said("결국에는 신념을 가진 자가 승리한다.")
+zuckerberg = Person()
+zuckerberg.name = "마크 저커버그"
+zuckerberg.age = 37
+print(zuckerberg.name, zuckerberg.age)
 
-steve_jobs = Person("엘론 머스크", 49)
-steve_jobs.said("일주일에 80-100시간 가량 투자해야 한다.")
+zuckerberg.getting_older()
+
+print(zuckerberg.name, zuckerberg.age)
+
+
+elon_musk = Person()
+elon_musk.name = "엘론 머스크"
+elon_musk.age = 49
+print(elon_musk.name, elon_musk.age)
+
+elon_musk.getting_older()
+
+print(elon_musk.name, elon_musk.age)
+
