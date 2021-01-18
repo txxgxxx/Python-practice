@@ -1,2 +1,2 @@
 # Python-practice
-return 공부할 것
+# return 공부할 것
